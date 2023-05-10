@@ -10,6 +10,8 @@ COPY . .
 
 ENV PYTHONPATH="$PYTHONPATH:/app/src"
 
-EXPOSE 8000
+ENV PORT=$PORT
 
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0"]
+EXPOSE $PORT
+
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", $PORT]
