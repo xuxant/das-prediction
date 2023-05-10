@@ -29,12 +29,3 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/dass-model:latest
-
-      - name: Deploy to heroku
-        uses: akhileshns/heroku-deploy@v3.12.13
-        with:
-          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: "DASS Prediction API"
-          heroku_email: "xuxant02@gmail.com"
-          usedocker: true
-          
