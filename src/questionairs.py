@@ -1,0 +1,29 @@
+from pydantic import BaseModel
+
+class Questionairs(BaseModel):
+    q1a: int
+    q2a: int
+    q3a: int
+    q4a: int
+    q5a: int
+    q6a: int
+    q7a: int
+    q8a: int
+    q9a: int
+    q10a: int
+    q11a: int
+    q12a: int
+    q13a: int
+    q14a: int
+    q15a: int
+    q16a: int
+    q17a: int
+    q18a: int
+    q19a: int
+    q20a: int
+    q21a: int
+    name: str
+    age: int
+    marital: str
+    education: str
+    gender: str
