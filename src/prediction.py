@@ -1,9 +1,9 @@
 import joblib
 import pandas as pd
 
-anx_model = joblib.load("../pickle/anxiety_model.pkl")
-dep_model = joblib.load("../pickle/depression_model.pkl")
-str_model = joblib.load("../pickle/stress_model.pkl")
+anx_model = joblib.load("/app/pickle/anxiety_model.pkl")
+dep_model = joblib.load("/app/pickle/depression_model.pkl")
+str_model = joblib.load("/app/pickle/stress_model.pkl")
 
 DASS_KEY = {'Depression': [3, 5, 10, 13, 16, 17, 21],
              'Anxiety': [2, 4, 7, 9, 15, 19, 20],
