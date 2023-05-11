@@ -10,6 +10,7 @@ origins = [
     "http://localhost",
     "http://localhost:3000",
     "https://dass-prediction.mixerml.com",
+    "https://app.mixerml.com",
 ]
 
 app.add_middleware(
